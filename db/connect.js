@@ -4,13 +4,7 @@ const connectionString =
 '';
 
 const connectDB = (url) => {
-    return mongoose
-    .connect(url, {
-        useNewUrlParser: true,
-        // userCreateIndex: true,
-        useFindAndModify: false,
-        useUnifiedTopology: true,
-    });
+    return mongoose.connect(url);
 
 }
 
